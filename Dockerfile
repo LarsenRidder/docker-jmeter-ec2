@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y wget curl unzip bc ssh openjdk-7-jre
 
 RUN wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip && \
 mkdir /usr/local/ec2 && \
-unzip ec2-api-tools.zip -d /usr/local/ec2 \
+unzip ec2-api-tools.zip -d /usr/local/ec2 && \
 rm -f ec2-api-tools.zip
 
 ENV JMETER_EC2_HOME /opt/jmeter-ec2
